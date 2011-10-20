@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Smack! Pow!</title>
+  <link rel="stylesheet" href="app.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  
+    </head>
+    <body id="index" class="home">
+      <div id="app_coloum"> 
+        <span class="title">Current Pow Apps</span>&nbsp;<a href="http://smack.dev"><img src="arrow_refresh_small.png" width="16" height="16" alt="Arrow Refresh Small"></a>
+        
+        <span class="right">Your Apps (<%=@apps.count%>) </span>
+        <ul style ='clear:both;'>
+         
+          <%@apps.each do |app|%>
+            <%= "<li><a href='http://#{app[:name]}.dev' class ='btn '> #{app[:title]} </a> </li> "%>
+          <%end%>
+                  </ul>
+      </div>
+    </body>
+    </html>
