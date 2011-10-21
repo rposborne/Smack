@@ -1,4 +1,4 @@
-**Some Smack to go with your Pow
+*Some Smack to go with your Pow*
 
 Smack is a super light homepage app for Pow web server. 
 
