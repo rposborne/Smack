@@ -12,10 +12,10 @@ No more .dev bookmarks or the localhost:3000,  just bookmark smack.dev and quick
   *Requires Sinatra*
   
   Install 
-    $ git clone git://github.com/rposborne/Smack.git
-    $ cd ~/.pow
-    $ ln -s /path/to/smack
-    $ open http://smack.dev/
+    git clone git://github.com/rposborne/Smack.git
+    cd ~/.pow
+    ln -s /path/to/smack
+    open http://smack.dev/
     
     Bookmark it!!
     
