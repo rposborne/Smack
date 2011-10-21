@@ -8,4 +8,3 @@ require 'etc'
     @apps.collect! { |app| app = {:name => app, :title => app.capitalize }}
     erb :index
   end
-  
