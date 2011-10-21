@@ -122,14 +122,25 @@ body{
   margin: auto;
 }
 #app_coloum ul li {
+	position: relative;
 	margin: 10px;
+	width: 91%;
 }
-#app_coloum ul li a{
+#app_coloum ul li a.btn{
+	display: block;
 	padding: 10px;
 	text-decoration: none;
-	width: 94%;
+	
 	text-align: center;
 	font: 19px "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+#app_coloum ul li a.action{
+	display: block;
+	padding: 10px;
+	width: 16px;
+	z-index:999;
+	margin-right: -40px;
+	margin-top: -40px;
 }
 .btn {
   cursor: pointer;

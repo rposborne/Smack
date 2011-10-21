@@ -11,12 +11,12 @@
         <span class="title">Current Pow Apps</span>&nbsp;<a href="http://smack.dev"><img src="arrow_refresh_small.png" width="16" height="16" alt="Arrow Refresh Small"></a>
         
         <span class="right">Your Apps (<%=@apps.count%>) </span>
-        <ul style ='clear:both;'>
-         
+        <ul style ='clear:both;'>    
           <%@apps.each do |app|%>
-            <%= "<li><a href='http://#{app[:name]}.dev' class ='btn '> #{app[:title]} </a> </li> "%>
+            <%= "<li><a href='http://#{app[:name]}.dev' class ='btn '> #{app[:title]} </a>  "%>
+            <a href='/restart/<%=app[:name]%>' class="right action" title="Restart <%=app[:name]%>"><img src="server_lightning.png" width="16" height="16" alt="Server Lightning"></a></li>
           <%end%>
-                  </ul>
+        </ul>
       </div>
     </body>
     </html>
